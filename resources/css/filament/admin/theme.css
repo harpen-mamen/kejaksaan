@@ -1,0 +1,120 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+:root {
+    --siak-green-950: #123b2b;
+    --siak-green-800: #166534;
+    --siak-green-100: #eaf4ec;
+    --siak-yellow-500: #eab308;
+    --siak-yellow-100: #fef3c7;
+    --siak-surface: #f7faf7;
+}
+
+.fi-sidebar {
+    border-inline-end: 1px solid #244b38;
+    background-color: var(--siak-green-950);
+    background-image: linear-gradient(180deg, #163f2e 0%, #102f23 52%, #0d281e 100%);
+}
+
+.fi-sidebar-header,
+.fi-body-has-topbar .fi-sidebar-header {
+    color: white;
+    background: linear-gradient(112deg, #123b2b 0%, #166534 82%, #d4a90b 82%, #facc15 100%);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 8%);
+}
+
+.fi-sidebar-header .fi-logo {
+    color: white;
+}
+
+.fi-sidebar-nav {
+    background: transparent;
+}
+
+.fi-sidebar-nav-groups {
+    gap: 1.6rem;
+}
+
+.fi-sidebar-group-label {
+    color: #9cb9a7;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+.fi-sidebar-group-btn .fi-icon,
+.fi-sidebar-group-dropdown-trigger-btn .fi-icon {
+    color: #b2cbbb;
+}
+
+.fi-sidebar-item-btn {
+    border: 1px solid transparent;
+    color: #dce9df;
+    transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.fi-sidebar-item-label,
+.fi-sidebar-item-btn > .fi-icon {
+    color: #dce9df;
+}
+
+.fi-sidebar-item.fi-sidebar-item-has-url > .fi-sidebar-item-btn:hover,
+.fi-sidebar-item.fi-sidebar-item-has-url > .fi-sidebar-item-btn:focus-visible {
+    border-color: rgb(255 255 255 / 9%);
+    background: rgb(255 255 255 / 8%);
+    color: white;
+    transform: translateX(2px);
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+    border-color: rgb(255 255 255 / 22%);
+    background: linear-gradient(100deg, #f5d45c, #eab308);
+    box-shadow: 0 5px 14px rgb(0 0 0 / 16%);
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn .fi-sidebar-item-label,
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn > .fi-icon {
+    color: #163b2b;
+}
+
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn .fi-sidebar-item-grouped-border-part {
+    background-color: #163b2b;
+}
+
+.fi-sidebar-item-badge-ctn {
+    color: #163b2b;
+}
+
+.fi-topbar {
+    border-bottom: 2px solid #f1d779;
+}
+
+.fi-main-ctn {
+    background: var(--siak-surface);
+}
+
+.fi-wi-stats-overview-stat {
+    border-top: 3px solid var(--siak-green-800);
+}
+
+.fi-wi-stats-overview-stat:nth-child(even) {
+    border-top-color: var(--siak-yellow-500);
+}
+
+.fi-section,
+.fi-wi-table {
+    border-color: #e2ebe2;
+}
+
+.dark .fi-main-ctn {
+    background: #111c17;
+}
+
+.dark .fi-sidebar {
+    border-inline-end-color: #244b38;
+    background-color: var(--siak-green-950);
+    background-image: linear-gradient(180deg, #163f2e 0%, #102f23 52%, #0d281e 100%);
+}
